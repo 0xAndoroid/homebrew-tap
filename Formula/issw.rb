@@ -13,6 +13,6 @@ class Issw < Formula
   end
 
   test do
-    assert_match "issw", shell_output("#{bin}/issw --help", 2)
+    assert_match "issw", shell_output("#{bin}/issw --help 2>&1")
   end
 end
